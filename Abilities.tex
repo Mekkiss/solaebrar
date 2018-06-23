@@ -54,33 +54,33 @@
 \newcounter{money}
 \newcounter{casterlevel}
 
-\newcommand{\charname}{NAME}
-\newcommand{\charrace}{RACE}
-\newcommand{\charclass}{CLASS LVL}
-\newcommand{\charalignment}{F}
+\newcommand{\charname}{Solaebrar}
+\newcommand{\charrace}{Samsaran}
+\newcommand{\charclass}{Druid (Nature Fang, Swamp domain) 2}
+\newcommand{\charalignment}{NG}
 \newcommand{\charsex}{Male}
 \newcommand{\charsize}{Medium}
 \setcounter{sizemod}{0}
-\newcommand{\chartype}{Humanoid (SUBTYPE)}
-\newcommand{\charheight}{10'2``}
-\newcommand{\charweight}{15.42kg/38lb}
-\newcommand{\charhair}{Black}
-\newcommand{\chareyes}{Red}
-\setcounter{age}{5}
+\newcommand{\chartype}{Humanoid (Samsaran)}
+\newcommand{\charheight}{5'8``}
+\newcommand{\charweight}{62kg/38lb}
+\newcommand{\charhair}{Orange}
+\newcommand{\chareyes}{Green}
+\setcounter{age}{24}
 
-\setcounter{xp}{0}
-\setcounter{ecl}{1}
+\setcounter{xp}{3}
+\setcounter{ecl}{2}
 
 \setcounter{totalhp}{21}
 \setcounter{currenthp}{21}
-\newcommand{\speed}{15', 3sq (medium load)}
+\newcommand{\speed}{30', 6sq}
 
-\setcounter{str}{5} % -4
-\setcounter{dex}{12} % 2
-\setcounter{con}{14} % 2
-\setcounter{int}{14} % 5
-\setcounter{wis}{8} % -2
-\setcounter{cha}{20} % 17
+\setcounter{str}{7}  % -4 
+\setcounter{dex}{17} % 13   
+\setcounter{con}{10} % 2  -2 racial
+\setcounter{int}{14} % 0  +2 racial +2 ioun stone
+\setcounter{wis}{20} % 10 +2 racial +2 mentee
+\setcounter{cha}{9}  % -1
 
 
 \setcounter{acnatural}{0}
@@ -97,33 +97,32 @@
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
- Combat Reflexes\\
+Weapon Finesse\\
 }
 
 \newcommand{\traits}{
-Extremely Fashionable \\
-Patient Optimist (+2 to diplomacy to change attitude of unfriendly or hostile, may retry once) \\
+Armour Expert \\
+\\
 }
 \newcommand{\specialabilities}{
 Low-light vision \\
-1/day dancing lights \\
-1/day ghost sound \\
-1/day prestigitiation \\
-1/day speak with animals \\
-1/day reroll natural 1 on 1d20 \\
-8/day Summon Monster I \\
-Fused Eidolon
-Fused Link
+Lifebound (Ex): Samsarans gain a +2 racial bonus on all saving throws made
+to resist death effects, saving throws against negative energy effects, Fortitude
+saves made to remove negative levels, and Constitution checks made to stabilize if
+reduced to negative hit points. \\
+1/day comprehend languages
+1/day deathwatch
+1/day stabilize \\
+Studied Target
 }
 
 \newcommand{\conditionalmods}{
-+2 Vs Enchantment\\
 }
 \newcommand{\languages}{
-Common, Kelish, Gnome, Varision \\
+Common, Samsaran, Celestial, Tengu \\
 }
-\setcounter{lightload}{16}
-\setcounter{medload}{33}
+\setcounter{lightload}{30}
+\setcounter{medload}{60}
 \setcounter{heavyload}{\value{lightload} + \value{medload}}
 
 \setcounter{money}{0}
@@ -135,8 +134,10 @@ Common, Kelish, Gnome, Varision \\
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
-\item [1st] \spell{Rejuvinate Eidolon [lesser]}, \spell{Grease}, \spell{Mage Armor}
-\item [0]   \spell{Guidance}, \spell{Detect Magic}, \spell{Mage Hand}, \spell{Message}, \spell{Acid Splash}
+\item [4th] \spell{Holy Sword}, \spell{Stay the Hand}, \spell{Cape of Wasps$^{\textrm{D}}$}
+\item [3rd] \spell{Sky Stallion}, \spell{Lily Pad Stride$^{\textrm{D}}$}
+\item [2nd] \spell{Saddle Surge}, \spell{See invisibility}, \spell{Burst of Nettles$^{\textrm{D}}$}
+\item [1st] \spell{Bless Weapon}, \spell{hydraulic push$^{\textrm{D}}$}
 \end{compactenum}
 }
 
