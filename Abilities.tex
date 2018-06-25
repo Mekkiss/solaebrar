@@ -56,7 +56,7 @@
 
 \newcommand{\charname}{Solaebrar}
 \newcommand{\charrace}{Samsaran}
-\newcommand{\charclass}{Druid (Nature Fang, Swamp domain) 2}
+\newcommand{\charclass}{Druid (Nature Fang, Swamp domain) 3}
 \newcommand{\charalignment}{NG}
 \newcommand{\charsex}{Male}
 \newcommand{\charsize}{Medium}
@@ -76,7 +76,7 @@
 \newcommand{\speed}{30', 6sq}
 
 \setcounter{str}{7}  % -4 
-\setcounter{dex}{17} % 13   
+\setcounter{dex}{17} % 13
 \setcounter{con}{10} % 2  -2 racial
 \setcounter{int}{14} % 0  +2 racial +2 ioun stone
 \setcounter{wis}{20} % 10 +2 racial +2 mentee
@@ -84,25 +84,24 @@
 
 
 \setcounter{acnatural}{0}
-\setcounter{acarmour}{2}
+\setcounter{acarmour}{3}
 \setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
 
-\setcounter{basefort}{0}
+\setcounter{basefort}{3}
 \setcounter{baseref}{0}
-\setcounter{basewill}{2}
+\setcounter{basewill}{3}
 \setcounter{resistancesave}{0}
-\setcounter{bab}{1}
+\setcounter{bab}{2}
 \setcounter{spellresistance}{0}
 
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
-Weapon Finesse\\
+Weapon Finesse, Dervish Dance\\
 }
 
 \newcommand{\traits}{
-Armour Expert \\
-\\
+Armour Expert, Blade of Mercy\\
 }
 \newcommand{\specialabilities}{
 Low-light vision \\
@@ -113,7 +112,7 @@ reduced to negative hit points. \\
 1/day comprehend languages
 1/day deathwatch
 1/day stabilize \\
-Studied Target
+Studied Target (move action, +1 to-hit and damage), Trackless Step, 2/day: Channel energy (heal 2d6 to animal, plant, vermin)
 }
 
 \newcommand{\conditionalmods}{
@@ -130,7 +129,7 @@ Common, Samsaran, Celestial, Tengu \\
 \newcommand{\conditionalspellmods}{
 }
 
-\setcounter{casterlevel}{2}
+\setcounter{casterlevel}{3}
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
@@ -145,7 +144,13 @@ Common, Samsaran, Celestial, Tengu \\
 None
 }
 \newcommand{\notes}{
-0/4 Prestige
+Typical Spell preparation:
+\begin{compactenum}
+\item [2nd] \spell{Burst of Nettles$^{\textrm{D}}$}, \spell{Burst of Radiance}, \spell{See invisible}
+\item [1st] \spell{hydraulic push$^{\textrm{D}}$}, \spell{Produce Flame x2}, \spell{Liberating Command}, \spell{Commune with Birds}, \spell{empty slot}
+\item [0th] \spell{Light}, \spell{Detect Magic}, \spell{Guidance}, \spell{Detect Poison*}
+\end{compactenum}
+
 }
 \newcommand{\people}{
 }
