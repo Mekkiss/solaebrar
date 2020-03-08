@@ -56,7 +56,7 @@
 
 \newcommand{\charname}{Solaebrar}
 \newcommand{\charrace}{Samsaran}
-\newcommand{\charclass}{Druid (Nature Fang, Swamp domain) 3}
+\newcommand{\charclass}{Druid (Nature Fang, Swamp domain) 5 / Dawnflower Dissedent 1}
 \newcommand{\charalignment}{NG}
 \newcommand{\charsex}{Male}
 \newcommand{\charsize}{Medium}
@@ -68,40 +68,42 @@
 \newcommand{\chareyes}{Green}
 \setcounter{age}{24}
 
-\setcounter{xp}{3}
-\setcounter{ecl}{2}
+\setcounter{xp}{13}
+\setcounter{ecl}{5}
 
-\setcounter{totalhp}{21}
-\setcounter{currenthp}{21}
+\setcounter{totalhp}{44}    %  5d8m2+1d8m1
+\setcounter{currenthp}{44}
 \newcommand{\speed}{30', 6sq}
 
 \setcounter{str}{7}  % -4 
-\setcounter{dex}{17} % 13
+\setcounter{dex}{20} % 13 +1 4th +2 belt
 \setcounter{con}{10} % 2  -2 racial
 \setcounter{int}{14} % 0  +2 racial +2 ioun stone
-\setcounter{wis}{20} % 10 +2 racial +2 mentee
+\setcounter{wis}{22} % 10 +2 racial +2 mentee +2 headband
 \setcounter{cha}{9}  % -1
 
 
 \setcounter{acnatural}{0}
 \setcounter{acarmour}{3}
+\setcounter{acshield}{2}
 \setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
-
-\setcounter{basefort}{3}
-\setcounter{baseref}{0}
-\setcounter{basewill}{3}
+                  
+                          % Cleric   Dissedent
+\setcounter{basefort}{4}  %   4          0
+\setcounter{baseref}{2}   %   1          1
+\setcounter{basewill}{5}  %   4          1
 \setcounter{resistancesave}{0}
-\setcounter{bab}{2}
+\setcounter{bab}{3}
 \setcounter{spellresistance}{0}
 
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
-Weapon Finesse, Dervish Dance\\
+Weapon Finesse, Dervish Dance, Power Attack\textsuperscript{b}, Toughness, Eschew Materials\textsuperscript{b}\\
 }
 
 \newcommand{\traits}{
-Armour Expert, Blade of Mercy\\
+Armour Expert, Blade of Mercy \\
 }
 \newcommand{\specialabilities}{
 Low-light vision \\
@@ -112,13 +114,15 @@ reduced to negative hit points. \\
 1/day comprehend languages
 1/day deathwatch
 1/day stabilize \\
-Studied Target (move action, +1 to-hit and damage), Trackless Step, 2/day: Channel energy (heal 2d6 to animal, plant, vermin)
+Sneak attack +1d6,
+Studied Target (move action, +1 to-hit and damage), Trackless Step, 2/day: Channel energy (heal 3d6 to animal, plant, vermin)
++half level to Bluff and Sense Motive, and to the DC to identify spells cast
 }
 
 \newcommand{\conditionalmods}{
 }
 \newcommand{\languages}{
-Common, Samsaran, Celestial, Tengu \\
+Common, Samsaran, Celestial, Tengu, Draconic, Tien \\
 }
 \setcounter{lightload}{30}
 \setcounter{medload}{60}
@@ -129,15 +133,21 @@ Common, Samsaran, Celestial, Tengu \\
 \newcommand{\conditionalspellmods}{
 }
 
-\setcounter{casterlevel}{3}
+\setcounter{casterlevel}{6}
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
-\item [4th] \spell{Holy Sword}, \spell{Stay the Hand}, \spell{Cape of Wasps$^{\textrm{D}}$}
-\item [3rd] \spell{Sky Stallion}, \spell{Lily Pad Stride$^{\textrm{D}}$}
-\item [2nd] \spell{Saddle Surge}, \spell{See invisibility}, \spell{Burst of Nettles$^{\textrm{D}}$}
-\item [1st] \spell{Bless Weapon}, \spell{hydraulic push$^{\textrm{D}}$}
+\item [9th] \spell{Mind blank, communal \textsuperscript{1}}
+\item [8th] \spell{screen \textsuperscript{1}}
+\item [7th] \spell{Mage's magnificent mansion \textsuperscript{1}}
+\item [6th] \spell{Veil \textsuperscript{1}}
+\item [5th] \spell{Mage's private sanctum \textsuperscript{1}}
+\item [4th] \spell{Holy Sword}, \spell{Stay the Hand}, \spell{Litany of Vengeance}, \spell{Cape of Wasps$^{\textrm{D}}$}, \spell{Detect scrying \textsuperscript{1}}
+\item [3rd] \spell{Lily Pad Stride$^{\textrm{D}}$}, \spell{nondetection \textsuperscript{1}}
+\item [2nd] \spell{Saddle Surge}, \spell{See invisibility}, \spell{Burst of Nettles$^{\textrm{D}}$}, \spell{Rope Trick \textsuperscript{1}}
+\item [1st] \spell{Bless Weapon}, \spell{hydraulic push$^{\textrm{D}}$}, \spell{Illusion of Calm \textsuperscript{1}}
 \end{compactenum}
+\textsuperscript{1} Duration doubles for Sarenrites
 }
 
 \newcommand{\domains}{
@@ -146,10 +156,13 @@ None
 \newcommand{\notes}{
 Typical Spell preparation:
 \begin{compactenum}
-\item [2nd] \spell{Burst of Nettles$^{\textrm{D}}$}, \spell{Burst of Radiance}, \spell{See invisible}
-\item [1st] \spell{hydraulic push$^{\textrm{D}}$}, \spell{Produce Flame x2}, \spell{Liberating Command}, \spell{Commune with Birds}, \spell{empty slot}
+\item [3rd] \spell{Lily pad stride$^{\textrm{D}}$}, \spell{Shield of Wings}, \spell{Daylight}, \spell{Empty Slot}
+\item [2nd] \spell{Burst of Nettles$^{\textrm{D}}$}, \spell{Burst of Radiance}, \spell{See invisible}, \spell{Empty slot}
+\item [1st] \spell{hydraulic push$^{\textrm{D}}$}, \spell{Bless Weapon}, \spell{Liberating Commandx2}, \spell{Commune with Birds}, \spell{Illusion of Calm}, \spell{empty slot}
 \item [0th] \spell{Light}, \spell{Detect Magic}, \spell{Guidance}, \spell{Detect Poison*}
 \end{compactenum}
+
+Dark Life Ring: +2 profane bonus vs Negative Energy, -5 Damage from Negative Energy
 
 }
 \newcommand{\people}{
@@ -158,6 +171,11 @@ Typical Spell preparation:
 
 
 \newcommand{\biography}{
-
+RotR 6   1250
+Emerald Spire 1 1398
+Oathbreakers die 1218
+Breath of the Dragonskull 1900
+Signs in Senghor 1206
+Dragons demand 2  4800
 }
 
